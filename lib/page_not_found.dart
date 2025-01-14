@@ -10,8 +10,8 @@ import 'package:http/http.dart' as http;
 import 'Utils/constant.dart';
 
 class PageNotFound {
-
   late Future<LottieComposition> _composition;
+
 /*  static Widget errorTemplate1({
     required BuildContext context,
   }) {
@@ -60,9 +60,9 @@ class PageNotFound {
   static Future<Widget> errorTemplate1({
     required BuildContext context,
   }) async {
-    final image = NetworkImage('https://shekharsfermion.github.io/img_curly.png');
+    final image =
+        NetworkImage('https://shekharsfermion.github.io/img_curly.png');
     await precacheImage(image, context);
-
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
@@ -101,7 +101,7 @@ class PageNotFound {
               Colors.transparent,
             )
           else if (Platform.isWindows)
-              ...[],
+            ...[],
         ],
       ),
     );
@@ -110,7 +110,8 @@ class PageNotFound {
   static Future<Widget> errorTemplate2({
     required BuildContext context,
   }) async {
-    final image = NetworkImage('https://shekharsfermion.github.io/img_error2.png');
+    final image =
+        NetworkImage('https://shekharsfermion.github.io/img_error2.png');
     await precacheImage(image, context);
 
     return templateSample(
@@ -130,12 +131,13 @@ class PageNotFound {
   static Future<Widget> errorTemplate3({
     required BuildContext context,
   }) async {
-    final image = NetworkImage('https://shekharsfermion.github.io/img_error3.png');
+    final image =
+        NetworkImage('https://shekharsfermion.github.io/img_error3.png');
     await precacheImage(image, context);
     return templateSample(
         context,
         Colors.white,
-        MediaQuery.of(context).size.width ,
+        MediaQuery.of(context).size.width,
         MediaQuery.of(context).size.height * 0.7,
         'https://shekharsfermion.github.io/img_error3.png',
         'The Medu Vada rolled off the plate! ',
@@ -149,7 +151,8 @@ class PageNotFound {
   static Future<Widget> errorTemplate4({
     required BuildContext context,
   }) async {
-    final image = NetworkImage('https://shekharsfermion.github.io/img_error4.png');
+    final image =
+        NetworkImage('https://shekharsfermion.github.io/img_error4.png');
     await precacheImage(image, context);
     return templateSample(
         context,
@@ -164,10 +167,12 @@ class PageNotFound {
         Colors.white,
         Colors.transparent);
   }
+
   static Future<Widget> errorTemplate5({
     required BuildContext context,
   }) async {
-    final image = NetworkImage('https://shekharsfermion.github.io/img_error5.png');
+    final image =
+        NetworkImage('https://shekharsfermion.github.io/img_error5.png');
     await precacheImage(image, context);
     return templateSample(
         context,
@@ -182,10 +187,12 @@ class PageNotFound {
         Colors.green,
         Colors.transparent);
   }
+
   static Future<Widget> errorTemplate6({
     required BuildContext context,
   }) async {
-    final image = NetworkImage('https://shekharsfermion.github.io/img_error6.png');
+    final image =
+        NetworkImage('https://shekharsfermion.github.io/img_error6.png');
     await precacheImage(image, context);
     return templateSample(
         context,
@@ -200,10 +207,12 @@ class PageNotFound {
         Colors.green,
         Colors.transparent);
   }
+
   static Future<Widget> errorTemplate7({
     required BuildContext context,
   }) async {
-    final image = NetworkImage('https://shekharsfermion.github.io/img_error7.png');
+    final image =
+        NetworkImage('https://shekharsfermion.github.io/img_error7.png');
     await precacheImage(image, context);
     return templateSample(
         context,
@@ -218,10 +227,12 @@ class PageNotFound {
         Colors.white,
         Colors.transparent);
   }
+
   static Future<Widget> errorTemplate8({
     required BuildContext context,
   }) async {
-    final image = NetworkImage('https://shekharsfermion.github.io/img_error8.png');
+    final image =
+        NetworkImage('https://shekharsfermion.github.io/img_error8.png');
     await precacheImage(image, context);
     return templateSample(
         context,
@@ -240,7 +251,8 @@ class PageNotFound {
   static Future<Widget> errorTemplate9({
     required BuildContext context,
   }) async {
-    final image = NetworkImage('https://shekharsfermion.github.io/img_error9.png');
+    final image =
+        NetworkImage('https://shekharsfermion.github.io/img_error9.png');
     await precacheImage(image, context);
     return templateSample(
         context,
@@ -259,7 +271,8 @@ class PageNotFound {
   static Future<Widget> errorTemplate10({
     required BuildContext context,
   }) async {
-    final image = NetworkImage('https://shekharsfermion.github.io/img_error10.png');
+    final image =
+        NetworkImage('https://shekharsfermion.github.io/img_error10.png');
     await precacheImage(image, context);
     return templateSample(
         context,
@@ -296,12 +309,8 @@ class PageNotFound {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           if (kIsWeb)
-            Column(
-              children: [
                 ..._designTemplate(context, image1Width, image1Height, image1,
                     text1, text2, text3, text1Color, text2Color, text3Color)
-              ],
-            )
           else if (Platform.isAndroid)
             ..._designTemplate(context, image1Width, image1Height, image1,
                 text1, text2, text3, text1Color, text2Color, text3Color)
@@ -326,7 +335,6 @@ class PageNotFound {
   ) {
     return [
       Image.network(image1),
-
       const SizedBox(height: 10),
       Text(
         text1,
@@ -337,7 +345,7 @@ class PageNotFound {
           color: text1Color,
         ),
       ),
-      const SizedBox(height:10),
+      const SizedBox(height: 10),
       if (text2.isNotEmpty)
         Text(
           text2,
@@ -362,10 +370,24 @@ class PageNotFound {
     ];
   }
 
-  static Future<LottieComposition> precacheLottieAnimation(String url) async {
+/*  static Future<LottieComposition> precacheLottieAnimation(String url) async {
     final networkAssetBundle = NetworkAssetBundle(Uri.parse(url));
     final data = await networkAssetBundle.load(url);
     return LottieComposition.fromBytes(data.buffer.asUint8List());
+  }*/
+
+  static Future<LottieComposition> precacheLottieAnimation(String url) async {
+    try {
+      final response = await http.get(Uri.parse(url));
+      if (response.statusCode == 200) {
+        return await LottieComposition.fromBytes(response.bodyBytes);
+      } else {
+        throw Exception('Failed to load Lottie file: ${response.statusCode}');
+      }
+    } catch (e) {
+      print('Error loading Lottie animation: $e');
+      rethrow;
+    }
   }
 
 /*
@@ -390,28 +412,19 @@ class PageNotFound {
   }
 */
 
-  static Future<Widget> animatedError1({required BuildContext context}) async {
+
+  static Future<Widget> animatedError1(
+      {required BuildContext context,
+        double? gifHeight,
+        double? gifWidth}) async {
     try {
-      final composition = await precacheLottieAnimation('https://shekharsfermion.github.io/animatederrorpage1.json');
-      return Container(
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.7,
-              color: Colors.white,
-              child: Lottie(
-                composition: composition,
-                width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-            ),
-          ],
+      final composition = await precacheLottieAnimation(
+          'https://shekharsfermion.github.io/animatederrorpage1.json');
+      return Center(
+        child: Lottie(
+          composition: composition,
+          width: gifWidth ?? MediaQuery.of(context).size.width * 0.8,
+          height: gifHeight ?? MediaQuery.of(context).size.height * 0.7,
         ),
       );
     } catch (e) {
@@ -420,28 +433,19 @@ class PageNotFound {
       );
     }
   }
-  static Future<Widget> animatedError2({required BuildContext context}) async {
+
+  static Future<Widget> animatedError2(
+      {required BuildContext context,
+        double? gifHeight,
+        double? gifWidth}) async {
     try {
-      final composition = await precacheLottieAnimation('https://shekharsfermion.github.io/animatederrorpage2.json');
-      return Container(
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.7,
-              color: Colors.white,
-              child: Lottie(
-                composition: composition,
-                width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-            ),
-          ],
+      final composition = await precacheLottieAnimation(
+          'https://shekharsfermion.github.io/animatederrorpage2.json');
+      return Center(
+        child: Lottie(
+          composition: composition,
+          width: gifWidth ?? MediaQuery.of(context).size.width * 0.8,
+          height: gifHeight ?? MediaQuery.of(context).size.height * 0.7,
         ),
       );
     } catch (e) {
@@ -450,28 +454,19 @@ class PageNotFound {
       );
     }
   }
-  static Future<Widget> animatedError3({required BuildContext context}) async {
+
+  static Future<Widget> animatedError3(
+      {required BuildContext context,
+        double? gifHeight,
+        double? gifWidth}) async {
     try {
-      final composition = await precacheLottieAnimation('https://shekharsfermion.github.io/animatederrorpage3.json');
-      return Container(
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.7,
-              color: Colors.white,
-              child: Lottie(
-                composition: composition,
-                width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-            ),
-          ],
+      final composition = await precacheLottieAnimation(
+          'https://shekharsfermion.github.io/animatederrorpage3.json');
+      return Center(
+        child: Lottie(
+          composition: composition,
+          width: gifWidth ?? MediaQuery.of(context).size.width * 0.8,
+          height: gifHeight ?? MediaQuery.of(context).size.height * 0.7,
         ),
       );
     } catch (e) {
@@ -480,28 +475,18 @@ class PageNotFound {
       );
     }
   }
-  static Future<Widget> animatedError4({required BuildContext context}) async {
+  static Future<Widget> animatedError4(
+      {required BuildContext context,
+        double? gifHeight,
+        double? gifWidth}) async {
     try {
-      final composition = await precacheLottieAnimation('https://shekharsfermion.github.io/animatederrorpage4.json');
-      return Container(
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.7,
-              color: Colors.white,
-              child: Lottie(
-                composition: composition,
-                width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-            ),
-          ],
+      final composition = await precacheLottieAnimation(
+          'https://shekharsfermion.github.io/animatederrorpage4.json');
+      return Center(
+        child: Lottie(
+          composition: composition,
+          width: gifWidth ?? MediaQuery.of(context).size.width * 0.8,
+          height: gifHeight ?? MediaQuery.of(context).size.height * 0.7,
         ),
       );
     } catch (e) {
@@ -510,28 +495,19 @@ class PageNotFound {
       );
     }
   }
-  static Future<Widget> animatedError5({required BuildContext context}) async {
+
+  static Future<Widget> animatedError5(
+      {required BuildContext context,
+        double? gifHeight,
+        double? gifWidth}) async {
     try {
-      final composition = await precacheLottieAnimation('https://shekharsfermion.github.io/animatederrorpage5.json');
-      return Container(
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.7,
-              color: Colors.white,
-              child: Lottie(
-                composition: composition,
-                width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-            ),
-          ],
+      final composition = await precacheLottieAnimation(
+          'https://shekharsfermion.github.io/animatederrorpage5.json');
+      return Center(
+        child: Lottie(
+          composition: composition,
+          width: gifWidth ?? MediaQuery.of(context).size.width * 0.8,
+          height: gifHeight ?? MediaQuery.of(context).size.height * 0.7,
         ),
       );
     } catch (e) {
@@ -540,28 +516,19 @@ class PageNotFound {
       );
     }
   }
-  static Future<Widget> animatedError6({required BuildContext context}) async {
+
+  static Future<Widget> animatedError6(
+      {required BuildContext context,
+        double? gifHeight,
+        double? gifWidth}) async {
     try {
-      final composition = await precacheLottieAnimation('https://shekharsfermion.github.io/animatederrorpage6.json');
-      return Container(
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.7,
-              color: Colors.white,
-              child: Lottie(
-                composition: composition,
-                width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-            ),
-          ],
+      final composition = await precacheLottieAnimation(
+          'https://shekharsfermion.github.io/animatederrorpage6.json');
+      return Center(
+        child: Lottie(
+          composition: composition,
+          width: gifWidth ?? MediaQuery.of(context).size.width * 0.8,
+          height: gifHeight ?? MediaQuery.of(context).size.height * 0.7,
         ),
       );
     } catch (e) {
@@ -570,28 +537,19 @@ class PageNotFound {
       );
     }
   }
-  static Future<Widget> animatedError7({required BuildContext context}) async {
+
+  static Future<Widget> animatedError7(
+      {required BuildContext context,
+        double? gifHeight,
+        double? gifWidth}) async {
     try {
-      final composition = await precacheLottieAnimation('https://shekharsfermion.github.io/animatederrorpage7.json');
-      return Container(
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.7,
-              color: Colors.white,
-              child: Lottie(
-                composition: composition,
-                width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-            ),
-          ],
+      final composition = await precacheLottieAnimation(
+          'https://shekharsfermion.github.io/animatederrorpage7.json');
+      return Center(
+        child: Lottie(
+          composition: composition,
+          width: gifWidth ?? MediaQuery.of(context).size.width * 0.8,
+          height: gifHeight ?? MediaQuery.of(context).size.height * 0.7,
         ),
       );
     } catch (e) {
@@ -600,88 +558,19 @@ class PageNotFound {
       );
     }
   }
-  static Future<Widget> animatedError8({required BuildContext context}) async {
+
+  static Future<Widget> animatedError8(
+      {required BuildContext context,
+        double? gifHeight,
+        double? gifWidth}) async {
     try {
-      final composition = await precacheLottieAnimation('https://shekharsfermion.github.io/animatederrorpage8.json');
-      return Container(
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.7,
-              color: Colors.white,
-              child: Lottie(
-                composition: composition,
-                width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-            ),
-          ],
-        ),
-      );
-    } catch (e) {
-      return const Center(
-        child: Text("Error loading animation"),
-      );
-    }
-  }
-  static Future<Widget> animatedError9({required BuildContext context}) async {
-    try {
-      final composition = await precacheLottieAnimation('https://shekharsfermion.github.io/animatederrorpage9.json');
-      return Container(
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.7,
-              color: Colors.white,
-              child: Lottie(
-                composition: composition,
-                width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-            ),
-          ],
-        ),
-      );
-    } catch (e) {
-      return const Center(
-        child: Text("Error loading animation"),
-      );
-    }
-  }
-  static Future<Widget> animatedError10({required BuildContext context}) async {
-    try {
-      final composition = await precacheLottieAnimation('https://shekharsfermion.github.io/animatederrorpage10.json');
-      return Container(
-        color: Colors.white,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: MediaQuery.of(context).size.height * 0.7,
-              color: Colors.white,
-              child: Lottie(
-                composition: composition,
-                width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.height * 0.7,
-              ),
-            ),
-          ],
+      final composition = await precacheLottieAnimation(
+          'https://shekharsfermion.github.io/animatederrorpage8.json');
+      return Center(
+        child: Lottie(
+          composition: composition,
+          width: gifWidth ?? MediaQuery.of(context).size.width * 0.8,
+          height: gifHeight ?? MediaQuery.of(context).size.height * 0.7,
         ),
       );
     } catch (e) {
@@ -692,6 +581,47 @@ class PageNotFound {
   }
 
 
+  static Future<Widget> animatedError9(
+      {required BuildContext context,
+        double? gifHeight,
+        double? gifWidth}) async {
+    try {
+      final composition = await precacheLottieAnimation(
+          'https://shekharsfermion.github.io/animatederrorpage9.json');
+      return Center(
+        child: Lottie(
+          composition: composition,
+          width: gifWidth ?? MediaQuery.of(context).size.width * 0.8,
+          height: gifHeight ?? MediaQuery.of(context).size.height * 0.7,
+        ),
+      );
+    } catch (e) {
+      return const Center(
+        child: Text("Error loading animation"),
+      );
+    }
+  }
+
+  static Future<Widget> animatedError10(
+      {required BuildContext context,
+      double? gifHeight,
+      double? gifWidth}) async {
+    try {
+      final composition = await precacheLottieAnimation(
+          'https://shekharsfermion.github.io/animatederrorpage10.json');
+      return Center(
+        child: Lottie(
+          composition: composition,
+          width: gifWidth ?? MediaQuery.of(context).size.width * 0.8,
+          height: gifHeight ?? MediaQuery.of(context).size.height * 0.7,
+        ),
+      );
+    } catch (e) {
+      return const Center(
+        child: Text("Error loading animation"),
+      );
+    }
+  }
 
 /*
   static Future<Widget> animatedError11({required BuildContext context}) async {
@@ -791,8 +721,4 @@ class PageNotFound {
     );
   }
 */
-
 }
-
-
-
