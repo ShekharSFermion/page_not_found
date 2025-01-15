@@ -27,7 +27,7 @@ class PageNotFound {
   static Future<Widget> errorTemplate1({
     required BuildContext context,
   }) async {
-    final image =
+    const image =
         NetworkImage('https://shekharsfermion.github.io/img_curly.png');
 
     /// Error image URL
@@ -82,6 +82,187 @@ class PageNotFound {
         ],
       ),
     );
+  }
+
+  static Future<Widget> errorTemplate2({
+    required BuildContext context,
+  }) async {
+    const image =
+        NetworkImage('https://shekharsfermion.github.io/img_error2.png');
+    await precacheImage(image, context);
+
+    return templateSample(
+        context,
+        Color(0xFFE1E5E6),
+        MediaQuery.of(context).size.width * 0.7,
+        MediaQuery.of(context).size.height * 0.5,
+        'https://shekharsfermion.github.io/img_error2.png',
+        'Great shot kid. That was one in a million.',
+        'Achievement Unlocked: You found... nothing. Try a different path!',
+        '',
+        Color(0xFFF57F17),
+        Color(0xFF2E819A),
+        Colors.black);
+  }
+
+  static Future<Widget> errorTemplate3({
+    required BuildContext context,
+  }) async {
+    const image =
+        NetworkImage('https://shekharsfermion.github.io/img_error3.png');
+    await precacheImage(image, context);
+    return templateSample(
+        context,
+        Colors.white,
+        MediaQuery.of(context).size.width,
+        MediaQuery.of(context).size.height * 0.7,
+        'https://shekharsfermion.github.io/img_error3.png',
+        'The Medu Vada rolled off the plate! ',
+        'Shall we find it?',
+        '',
+        Colors.black,
+        Colors.yellow,
+        Colors.transparent);
+  }
+
+  static Future<Widget> errorTemplate4({
+    required BuildContext context,
+  }) async {
+    const image =
+        NetworkImage('https://shekharsfermion.github.io/img_error4.png');
+    await precacheImage(image, context);
+    return templateSample(
+        context,
+        Colors.black,
+        MediaQuery.of(context).size.width * 0.7,
+        MediaQuery.of(context).size.height * 0.5,
+        'https://shekharsfermion.github.io/img_error4.png',
+        'This page is incomplete—',
+        'some pixels are missing. ',
+        '',
+        Colors.white,
+        Colors.white,
+        Colors.transparent);
+  }
+
+  static Future<Widget> errorTemplate5({
+    required BuildContext context,
+  }) async {
+    const image =
+        NetworkImage('https://shekharsfermion.github.io/img_error5.png');
+    await precacheImage(image, context);
+    return templateSample(
+        context,
+        Colors.white,
+        MediaQuery.of(context).size.width * 0.7,
+        MediaQuery.of(context).size.height * 0.5,
+        'https://shekharsfermion.github.io/img_error5.png',
+        'Whoops... Looks like we lost an egg along the way.',
+        '',
+        '',
+        Colors.black,
+        Colors.green,
+        Colors.transparent);
+  }
+
+  static Future<Widget> errorTemplate6({
+    required BuildContext context,
+  }) async {
+    const image =
+        NetworkImage('https://shekharsfermion.github.io/img_error6.png');
+    await precacheImage(image, context);
+    return templateSample(
+        context,
+        Colors.white,
+        MediaQuery.of(context).size.width * 0.7,
+        MediaQuery.of(context).size.height * 0.5,
+        'https://shekharsfermion.github.io/img_error6.png',
+        'Our construction crew accidentally knocked this page down.',
+        'This page is still in construction.',
+        '',
+        Colors.black,
+        Colors.green,
+        Colors.transparent);
+  }
+
+  static Future<Widget> errorTemplate7({
+    required BuildContext context,
+  }) async {
+    const image =
+        NetworkImage('https://shekharsfermion.github.io/img_error7.png');
+    await precacheImage(image, context);
+    return templateSample(
+        context,
+        const Color(0xFFFCB82F),
+        MediaQuery.of(context).size.width * 0.7,
+        MediaQuery.of(context).size.height * 0.5,
+        'https://shekharsfermion.github.io/img_error7.png',
+        'Oops! 404',
+        'Our cat spilled milk on this page. Let’s lick it clean and try again.',
+        '',
+        Colors.white,
+        Colors.white,
+        Colors.transparent);
+  }
+
+  static Future<Widget> errorTemplate8({
+    required BuildContext context,
+  }) async {
+    const image =
+        NetworkImage('https://shekharsfermion.github.io/img_error8.png');
+    await precacheImage(image, context);
+    return templateSample(
+        context,
+        Colors.white,
+        MediaQuery.of(context).size.width * 0.7,
+        MediaQuery.of(context).size.height * 0.5,
+        'https://shekharsfermion.github.io/img_error8.png',
+        'What happened to the Cupcake?',
+        'The thing is simple: or we have an undesired guest in our kitchen,',
+        'or something went wrong with the website.',
+        Color(0xFFB9832C),
+        Color(0xFF0277BD),
+        Color(0xFF0277BD));
+  }
+
+  static Future<Widget> errorTemplate9({
+    required BuildContext context,
+  }) async {
+    const image =
+        NetworkImage('https://shekharsfermion.github.io/img_error9.png');
+    await precacheImage(image, context);
+    return templateSample(
+        context,
+        Color(0xFFEB8A5E),
+        MediaQuery.of(context).size.width * 0.7,
+        MediaQuery.of(context).size.height * 0.5,
+        'https://shekharsfermion.github.io/img_error9.png',
+        '404: A mischievous cat deleted this page.',
+        ' Time for a digital timeout!',
+        '',
+        Color(0xFF785D4C),
+        Colors.white,
+        Color(0xFFE7DC68));
+  }
+
+  static Future<Widget> errorTemplate10({
+    required BuildContext context,
+  }) async {
+    const image =
+        NetworkImage('https://shekharsfermion.github.io/img_error10.png');
+    await precacheImage(image, context);
+    return templateSample(
+        context,
+        Color(0xFFEEDCCE),
+        MediaQuery.of(context).size.width * 0.7,
+        MediaQuery.of(context).size.height * 0.5,
+        'https://shekharsfermion.github.io/img_error10.png',
+        'Looks like someone got too excited opening this box...',
+        'and now the page is gone!.',
+        '',
+        Color(0xFF785D4C),
+        Color(0xFF785D4C),
+        Color(0xFFE7DC68));
   }
 
   /// Creates a template for displaying a specific error with a customizable background, text, and image.
@@ -196,8 +377,6 @@ class PageNotFound {
         throw Exception('Failed to load Lottie file: ${response.statusCode}');
       }
     } catch (e) {
-      print('Error loading Lottie animation: $e');
-
       /// Logs any errors encountered
       rethrow;
     }

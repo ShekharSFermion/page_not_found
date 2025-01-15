@@ -23,7 +23,7 @@ class _ExampleState extends State<Example> {
       home: Scaffold(
         body: FutureBuilder<Widget>(
           /// Fetches the animated error widget using the `animatedError10` method from the `PageNotFound` package.
-          future: PageNotFound.animatedError10(context: context),
+          future: PageNotFound.errorTemplate1(context: context),
           builder: (context, snapshot) {
             /// While the future is still loading, display a loading spinner.
             if (snapshot.connectionState == ConnectionState.waiting) {
