@@ -1,7 +1,7 @@
 name: page_not_found
 description: "This package helps developers create elegant Page Not Found screens to improve user experience when a requested resource or page is unavailable."
 version: 0.0.2
-homepage:
+repository: https://github.com/ShekharSFermion/page_not_found.git
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
