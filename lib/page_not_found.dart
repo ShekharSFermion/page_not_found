@@ -7,10 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
 import 'package:http/http.dart' as http;
 
-import 'Utils/constant.dart';
-
 class PageNotFound {
-  late Future<LottieComposition> _composition;
 
 /*  static Widget errorTemplate1({
     required BuildContext context,

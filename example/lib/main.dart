@@ -22,7 +22,7 @@ class _ExampleState extends State<Example> {
         // body: PageNotFound.animatedError12(context: context),
 
         body: FutureBuilder<Widget>(
-          future: PageNotFound.errorTemplate1(context: context),
+          future: PageNotFound.animatedError10(context: context),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return const Center(child: CircularProgressIndicator());
